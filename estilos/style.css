@@ -1,0 +1,6 @@
+body{
+    background-color: #EEF9BF;
+}
+
+.titulo{width: 100%;margin-top: 40px;display: flex;align-items: center;justify-content: center;}
+.titulo .container{ font-family: 'Roboto';font-weight: 700;font-size: 56px;color: #75B79E;}
