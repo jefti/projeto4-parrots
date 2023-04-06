@@ -27,6 +27,9 @@ body{
     transform: rotateY(180deg);
   }
 
+  .back-face img{display: none;}
+  .flip-tras img{ display: inline;}
+
   /*.card:hover .back-face {
     transform: rotateY(0deg);
   }
@@ -42,7 +45,7 @@ body{
 
 
 
-.face img{width: 100px;}
+.face img{width: 100px;pointer-events: none; user-select: none;}
 
 
 
