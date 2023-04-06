@@ -27,13 +27,24 @@ body{
     transform: rotateY(180deg);
   }
 
-  .card:hover .back-face {
+  /*.card:hover .back-face {
     transform: rotateY(0deg);
   }
 
   .card:hover .front-face {
     transform: rotateY(-180deg);
-  }
+  }   código para vira com o hover*/
+
+
+  .flip-frente{   transform: rotateY(-180deg);}
+  .flip-tras{    transform: rotateY(0deg);}
+
+
+
+
+.face img{width: 100px;}
+
+
 
 .flex{display: flex; flex-wrap: wrap;justify-content: center;align-content: flex-start;}
 
