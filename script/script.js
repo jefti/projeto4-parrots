@@ -65,13 +65,13 @@ function comparador() {
 
 //função para preencher o tabuleiro de jogo de acordo com os valores aleatorio encontrados no banco de dados
 function preencher(numero){
-    let cont = 1;
+    let cont = 0;
     const board = document.querySelector('.tabuleiro');
     //console.log(board);
 
 
-    while (cont <= numero){
-        id_figura = banco[cont-1];
+    while (cont < numero){
+        id_figura = banco[cont];
         const carta = criaCarta(id_figura);
         board.innerHTML += carta;
         cont++;
