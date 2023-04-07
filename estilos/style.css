@@ -55,7 +55,8 @@ body{
 
 .titulo{width: 100%;margin-top: 40px;display: flex;align-items: center;justify-content: center; margin-bottom: 13px;}
 .titulo .container{ font-family: 'Roboto';font-weight: 700;font-size: 56px;color: #75B79E;justify-content: center;}
-.content{width: 100%; display: flex;justify-content: center;background-color: red;}
-.tabuleiro{width: 80%;background-color: blue;}
-.tabuleiro .card{flex-shrink: 0;margin: 17px 17px 17px 17px; };
+.content{width: 100%; display: flex;justify-content: center;}
+.tabuleiro{width: 80%;}
+.tabuleiro .card{flex-shrink: 0;margin: 17px 17px 17px 17px;}
 
+.bonus{position: fixed;top:10px;right:10px;font-family: 'Roboto';font-weight:700;font-size: 36px;color:#86BD8D; z-index: 4;}

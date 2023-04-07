@@ -12,6 +12,7 @@ let jogadas = 0; //variavel que armazena o número de jogadas
 let pares_restantes = 0; //variavel que armazena o número de pares restantes para acabar o jogo
 let tempo_reg = 0; //variavel que armazena o tempo em segundos que a partida dura
 
+
 iniciar_jogo();
 
 //função responsavel pela inicialização do jogo
@@ -20,7 +21,7 @@ function iniciar_jogo(){
     pares_restantes = quant_cartas/2 ;
     criar_banco(quant_cartas); //criar o banco de dados
     preencher (quant_cartas); //preencher o tabuleiro de acordo com o BD
-    
+    cronometro()
 
 }
 
@@ -216,8 +217,58 @@ function desvirar(carta){
 
 function fim_de_jogo(){
     if(pares_restantes == 0){
-        alert(`Você ganhou em ${jogadas} jogadas`)
+        let tempo = parar();
+        alert(`Você ganhou em ${jogadas} jogadas! A duração do jogo foi de ${tempo} segundos!`);
+        resposta = prompt('Gostaria de reiniciar ?');
+        if(resposta == 'sim'){
+            reiniciar();
+        }else{
+
+        }
+        
     }else{
         return 0;
     }
+}
+
+function cronometro(){
+    let item = document.querySelector('.bonus');
+    item.innerHTML = 0;
+    tempo_reg = setInterval(contar,1000);
+}
+
+function contar(){
+    let item = document.querySelector('.bonus');
+    item.innerHTML ++;
+}
+
+function parar(){
+    clearInterval(tempo_reg);
+    let item = document.querySelector('.bonus');
+    let valor = item.innerHTML
+    console.log(item.innerHTML);
+    item.innerHTML = 00;
+    return  valor;
+}
+
+
+function reiniciar(){
+    const board = document.querySelector('.tabuleiro');
+    board.innerHTML = '';
+
+    let banco = []; 
+    let quant_cartas= 0;
+    
+    let carta1 = ''; 
+    let carta2 = ''; 
+    
+    let controle = true; 
+    
+    let jogadas = 0; 
+    let pares_restantes = 0; 
+    let tempo_reg = 0;
+
+    iniciar_jogo();
+
+
 }
