@@ -218,13 +218,12 @@ function desvirar(carta){
 function fim_de_jogo(){
     if(pares_restantes == 0){
         let tempo = parar();
-        alert(`Você ganhou em ${jogadas} jogadas! A duração do jogo foi de ${tempo} segundos!`);
-        resposta = prompt('Gostaria de reiniciar a partida ?');
-        if(resposta == 'sim'){
-            reiniciar();
-        }else{
-
-        }
+        alert(`Você ganhou em ${jogadas} jogadas!`);
+        //alert(`Você ganhou em ${jogadas} jogadas! A duração do jogo foi de ${tempo} segundos!`);
+        //resposta = prompt('Gostaria de reiniciar a partida ?');
+        //if(resposta == 'sim'){
+         //   reiniciar();
+        //}else{}
         
     }else{
         return 0;
