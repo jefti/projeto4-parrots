@@ -105,7 +105,7 @@ function criaCarta(id){
             break;
 
     }
-    let texto = `<div onclick='clicar(this)' class='card ${id}' data-test="card"><div class='front-face face'><img data-test="face-down-image" src='./imagens/back.png'></div><div class='back-face face'><img src='${imagem}' data-test="face-up-image" ></div></div>`;
+    let texto = `<div data-test="card" onclick='clicar(this)' class='card ${id}'><div class='front-face face'><img data-test="face-down-image" src='./imagens/back.png'></div><div class='back-face face'><img data-test="face-up-image" src='${imagem}'></div></div>`;
     return texto;
 }
 
@@ -246,7 +246,6 @@ function parar(){
     let item = document.querySelector('.bonus');
     let valor = item.innerHTML
     console.log(item.innerHTML);
-    item.innerHTML = 00;
     return  valor;
 }
 
