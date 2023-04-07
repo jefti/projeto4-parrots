@@ -27,9 +27,6 @@ body{
     transform: rotateY(180deg);
   }
 
-  .back-face img{display: none;}
-  .flip-tras img{ display: inline;}
-
   /*.card:hover .back-face {
     transform: rotateY(0deg);
   }
@@ -39,8 +36,8 @@ body{
   }   código para vira com o hover*/
 
 
-  .flip-frente{   transform: rotateY(-180deg);}
-  .flip-tras{    transform: rotateY(0deg);}
+  .flip-frente{transform: rotateY(-180deg);}
+  .flip-tras{ transform: rotateY(0deg);}
 
 
 
